@@ -1,0 +1,370 @@
+#root {
+    max-width: 100%;
+    margin: 0 auto;
+    /* padding: 2rem; */
+    text-align: center;
+}
+
+body {
+    background-color: #fff;
+    /* padding: 0 3%; */
+    justify-content: center;
+    width: auto;
+    font-weight: 500;
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+}
+
+.logo {
+    height: 50px;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+.address {
+    padding: 0 2rem;
+}
+
+.info-address {
+    text-align: justify;
+    text-indent: 20px;
+    padding: 0 2rem;
+}
+
+.info-text {
+    text-align: justify;
+    text-indent: 20px;
+    padding: 0 2rem;
+}
+
+
+.info-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.info-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+.info-block h3 {
+    order: 1;
+}
+
+.info-text {
+    order: 2;
+}
+
+.info-block img {
+    max-width: 50%;
+}
+
+@media (max-width: 768px) {
+    .info-block {
+        flex-direction: column;
+    }
+
+    .info-content {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    .info-block img {
+        max-width: 100%;
+    }
+}
+
+.img-front {
+    max-width: 100%;
+}
+
+.section {
+    height: auto;
+    width: 100%;
+    padding: 1rem 0;
+}
+
+.section:nth-child(even) {
+    background-color: #1d2528;
+    color: #fff;
+}
+
+.section:nth-child(odd) {
+    background-color: #E2D4C0;
+    color: #1d2528;
+}
+
+.section img {
+    width: 100%;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    color: black;
+    background-color: rgba(225, 225, 225, 0.75);
+    background-size: cover;
+    margin: 2rem;
+    padding: 1rem;
+}
+
+
+.icon-tile {
+    display: flex;
+    flex-direction: column;
+    max-width: 75%;
+    justify-content: space-between;
+    /* padding: 1rem; */
+    text-align: center;
+}
+
+.icon-tile h3 {
+    margin: 10px 0 0 0;
+    font-size: 1.3rem;
+}
+
+.outdoors-tile {
+    display: flex;
+    width: 50%;
+}
+
+.art-haven-tile {
+    display: flex;
+    justify-content: space-between;
+}
+
+.art-haven-tile img {
+    width: 33.33%;
+}
+
+.nature-tile {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nature-tile img {
+    width: 33.33%;
+}
+
+.title {
+    padding-top: 20px;
+    text-align: center;
+    font-size: large;
+    font-weight: 600;
+}
+
+.fullpg {
+    max-width: 100%;
+}
+
+li {
+    list-style-type: none;
+}
+
+@keyframes logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+
+    .header {
+        display: none;
+    }
+
+    .icons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+}
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Create four equal columns that floats next to eachother */
+.column {
+    /* float: left; */
+    width: 45%;
+    margin: 1.66%;
+}
+
+.column img {
+    width: 100%;
+
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    font-weight: bold;
+    padding: 8px 16px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* Caption text */
+.caption-container {
+    text-align: center;
+    background-color: black;
+    padding: 2px 16px;
+    color: white;
+}
+
+img.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+img.hover-shadow {
+    transition: 0.3s;
+}
+
+.hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.footer-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* background-color: #1d2528; */
+}
+
+footer {
+    background-color: #1d2528;
+    color: #f2f2f2;
+}
+
+.flags {
+    display: flex;
+    flex-direction: row;
+    max-width: 50%;
+}
+
+.flags img {
+    max-width: 100%;
+}
+
+.contact,
+.hours {
+    text-align: left;
+    padding: 10px;
+}
