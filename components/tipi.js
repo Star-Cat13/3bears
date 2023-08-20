@@ -10,7 +10,7 @@ class Tipi extends HTMLElement {
                 <img src="https://github.com/Star-Cat13/3BM/blob/main/public/tipi-bear-400x284.png?raw=true" onclick="openModal(); currentSlide(1);" class="hover-shadow" />
             </div>
             <div class="column">
-                <img src="https://github.com/Star-Cat13/3BM/blob/main/public/tipi-bed-400x284.png?raw=true" onclick="openModal(); currentSlide(2);" class="hover-shadow" />
+                <img src="https://github.com/Star-Cat13/3BM/blob/main/public/tipi-front-400x284.png?raw=true" onclick="openModal(); currentSlide(2);" class="hover-shadow" />
             </div>
         </div>
         <div class="row room-pics">
@@ -34,7 +34,7 @@ class Tipi extends HTMLElement {
 
                     <div class="mySlides">
                         <div class="numbertext">2 / 4</div>
-                        <img src="https://github.com/Star-Cat13/3BM/blob/main/public/tipi-bed.jpg?raw=true" style="width: 100%;"  />
+                        <img src="https://github.com/Star-Cat13/3BM/blob/main/public/tipi-front.jpg?raw=true" style="width: 100%;"  />
                         
                     </div>
 
@@ -60,7 +60,7 @@ class Tipi extends HTMLElement {
                 <img class="demo" src="https://github.com/Star-Cat13/3BM/blob/main/public/tipi-bear-400x284.png?raw=true" onclick="currentSlide(1);" alt="" />
             </div>
             <div class="column">
-                <img class="demo" src="https://github.com/Star-Cat13/3BM/blob/main/public/tipi-bed-400x284.png?raw=true" onclick="currentSlide(2);" alt="" />
+                <img class="demo" src="https://github.com/Star-Cat13/3BM/blob/main/public/tipi-front-400x284.png?raw=true" onclick="currentSlide(2);" alt="" />
             </div>
             <div class="column">
                 <img class="demo" src="https://github.com/Star-Cat13/3BM/blob/main/public/tipi-canopy-400x284.png?raw=true" onclick="currentSlide(3);" alt="" />
