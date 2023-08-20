@@ -163,6 +163,11 @@ h3 {
     font-weight: 600;
 }
 
+.phoneNumber a {
+    color: black;
+    text-decoration: underline;
+}
+
 .fullpg {
     max-width: 100%;
 }
@@ -345,7 +350,7 @@ img.hover-shadow {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    /* background-color: #1d2528; */
+    background-color: #1d2528;
 }
 
 footer {
@@ -357,10 +362,23 @@ footer {
     display: flex;
     flex-direction: row;
     max-width: 50%;
+    justify-content: space-around;
+    margin: auto;
 }
+
 
 .flags img {
     max-width: 100%;
+    max-height: 200px;
+    /* Set the maximum height */
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    /* Maintain aspect ratio */
+}
+
+.linc-flag {
+    background-color: rgb(15 22 121);
 }
 
 .contact,

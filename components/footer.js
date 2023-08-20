@@ -14,8 +14,8 @@ class Footer extends HTMLElement {
           </div>
           <div class='contact'>
               <h2>CONTACT</h2>
-              PHONE <br />(406) 362-4355<br />
-              EMAIL <a href="mailto:threebearsmotel@gmail.com">threebearsmotel@gmail.com</a><br />
+              PHONE <br /><a href="tel:+4063624355">(406) 362-4355</a><br />
+              EMAIL <br /><a href="mailto:threebearsmotel@gmail.com">threebearsmotel@gmail.com</a><br />
               ADDRESS <br />MT HWY 200<br />
                   203 Main St.<br />
                   Lincoln, Montana 59639
@@ -24,7 +24,7 @@ class Footer extends HTMLElement {
       <div class='links'>
           <h2>EXPLORE LINCOLN</h2>
           <div class='flags'>
-          <img src='https://threebearsmotel.com/wp-content/uploads/2021/06/LincolnLogo-300x183.png' />
+          <img src='https://threebearsmotel.com/wp-content/uploads/2021/06/LincolnLogo-300x183.png' class='linc-flag' />
           <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Flag_of_Montana.svg/1920px-Flag_of_Montana.svg.png' />
           </div>
   
