@@ -133,7 +133,12 @@ h3 {
 
 .outdoors-tile {
     display: flex;
-    width: 50%;
+}
+
+.outdoors-tile img {
+    flex: 1;
+    max-width: 33%;
+    height: auto;
 }
 
 .art-haven-tile {
@@ -343,12 +348,6 @@ img.hover-shadow {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.indent-block {
-    display: block;
-    margin-left: 20px;
-    /* Adjust this value for the desired indent */
-}
-
 .footer-top {
     display: flex;
     flex-direction: row;
@@ -388,4 +387,35 @@ footer {
 .hours {
     text-align: left;
     padding: 10px;
+}
+
+.row-rooms {
+    display: flex;
+    flex-direction: row-reverse;
+    /* Reversing the direction of flex items */
+    flex-wrap: wrap;
+}
+
+.column-rooms {
+    flex: 1;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.column-rooms img {
+    width: 100%;
+    height: auto;
+}
+
+/* Media Queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .column-rooms {
+        flex: 50%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .column-rooms {
+        flex: 100%;
+    }
 }
