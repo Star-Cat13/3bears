@@ -10,14 +10,17 @@ class Footer extends HTMLElement {
           <div class='hours'>
               <h2>COME ON IN!</h2>
               <span>Office Hours: 8 AM to 10 PM </span> <br />
-              <span>OPEN YEAR ROUND <br />Excluding the first two weeks of December. </span>
+              <span>OPEN YEAR ROUND <br />Excluding the first two weeks of December. </span> <br /> <br .>
+              ADDRESS <br />MT HWY 200<br />
+                  203 Main St.<br />
+                  Lincoln, Montana 59639
           </div>
           <div class='contact'>
               <h2>CONTACT</h2>
               PHONE <br /><a href="tel:+4063624355">(406) 362-4355</a><br />
               EMAIL <br /><a href="mailto:threebearsmotel@gmail.com">threebearsmotel@gmail.com</a><br />
-              ADDRESS <br />MT HWY 200<br />
-                  203 Main St.<br />
+              MAILING ADDRESS <br />
+              PO Box 995<br />
                   Lincoln, Montana 59639
           </div>
       </div>

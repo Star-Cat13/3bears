@@ -10,15 +10,15 @@ class Rooms extends HTMLElement {
                 <img src="https://github.com/Star-Cat13/3bears/blob/main/public/2023-room-4-bed-400x284.png?raw=true" onclick="openModal(); currentSlide(1);" class="hover-shadow" />
             </div>
             <div class="column">
-                <img src="https://github.com/Star-Cat13/3BM/blob/main/public/room01-400x284.jpg?raw=true" onclick="openModal(); currentSlide(2);" class="hover-shadow" />
+                <img src="https://github.com/Star-Cat13/3bears/blob/main/public/2023-room-4-counter-and-bath-400x284.png?raw=true" onclick="openModal(); currentSlide(2);" class="hover-shadow" />
             </div>
         </div>
         <div class="row room-pics">
             <div class="column">
-                <img src="https://github.com/Star-Cat13/3BM/blob/main/public/room03-400x284.jpg?raw=true" onclick="openModal(); currentSlide(3);" class="hover-shadow" />
+                <img src="https://github.com/Star-Cat13/3bears/blob/main/public/room-6-counter-400x284.png?raw=true" onclick="openModal(); currentSlide(3);" class="hover-shadow" />
             </div>
             <div class="column">
-        <img src="https://github.com/Star-Cat13/3BM/blob/main/public/room02-400x284.jpg?raw=true" onclick="openModal(); currentSlide(4);" class="hover-shadow" />
+                <img src="https://github.com/Star-Cat13/3bears/blob/main/public/2023-room-11-400x284.png?raw=true" onclick="openModal(); currentSlide(4);" class="hover-shadow" />
             </div>
         </div>
 
@@ -34,19 +34,19 @@ class Rooms extends HTMLElement {
 
                     <div class="mySlides">
                         <div class="numbertext">2 / 4</div>
-                        <img src="https://threebearsmotel.com/wp-content/uploads/2021/06/room01-scaled.jpg" style="width: 100%;"  />
+                        <img src="https://github.com/Star-Cat13/3bears/blob/main/public/2023-room-4-counter-and-bath.jpg?raw=true" style="width: 100%;"  />
                         
                     </div>
 
                     <div class="mySlides">
                         <div class="numbertext">3 / 4</div>
-                        <img src="https://threebearsmotel.com/wp-content/uploads/2021/06/room03-scaled.jpg" style="width: 100%;"  />
+                        <img src="https://github.com/Star-Cat13/3bears/blob/main/public/room-6-counter.jpg?raw=true" style="width: 100%;"  />
                         
                     </div>
 
                     <div class="mySlides">
                         <div class="numbertext">4 / 4</div>
-                        <img src="https://threebearsmotel.com/wp-content/uploads/2021/06/room02-scaled.jpg" style="width: 100%;"  />
+                        <img src="https://github.com/Star-Cat13/3bears/blob/main/public/2023-room-11.jpg?raw=true" style="width: 100%;"  />
                         
                     </div>
 
@@ -60,13 +60,13 @@ class Rooms extends HTMLElement {
                 <img class="demo" src="https://github.com/Star-Cat13/3bears/blob/main/public/2023-room-4-bed-400x284.png?raw=true" onclick="currentSlide(1);" alt="" />
             </div>
             <div class="column">
-                <img class="demo" src="https://github.com/Star-Cat13/3BM/blob/main/public/room01-400x284.jpg?raw=true" onclick="currentSlide(2);" alt="" />
+                <img class="demo" src="https://github.com/Star-Cat13/3bears/blob/main/public/2023-room-4-counter-and-bath-400x284.png?raw=true" onclick="currentSlide(2);" alt="" />
             </div>
             <div class="column">
-                <img class="demo" src="https://github.com/Star-Cat13/3BM/blob/main/public/room03-400x284.jpg?raw=true" onclick="currentSlide(3);" alt="" />
+                <img class="demo" src="https://github.com/Star-Cat13/3bears/blob/main/public/room-6-counter-400x284.png?raw=true" onclick="currentSlide(3);" alt="" />
             </div>
             <div class="column">
-                <img class="demo" src="https://github.com/Star-Cat13/3BM/blob/main/public/room02-400x284.jpg?raw=true" onclick="currentSlide(4);" alt="" />
+                <img class="demo" src="https://github.com/Star-Cat13/3bears/blob/main/public/2023-room-11-400x284.png?raw=true" onclick="currentSlide(4);" alt="" />
             </div>
         </div>
 
