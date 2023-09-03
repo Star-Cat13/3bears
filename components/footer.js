@@ -27,7 +27,7 @@ class Footer extends HTMLElement {
       <div class='links'>
           <h2>EXPLORE LINCOLN</h2>
           <div class='flags'>
-          <img src='https://threebearsmotel.com/wp-content/uploads/2021/06/LincolnLogo-300x183.png' class='linc-flag' />
+          <img src='https://github.com/Star-Cat13/3bears/blob/main/public/LincolnLogo.png?raw=true' class='linc-flag' />
           <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Flag_of_Montana.svg/1920px-Flag_of_Montana.svg.png' />
           </div>
   
