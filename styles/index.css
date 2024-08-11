@@ -682,3 +682,36 @@ footer {
         flex: 100%;
     }
 }
+
+/* reviews css */
+.reviews-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 20px 10px;
+}
+
+.review-box {
+    flex: 1;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #E2D4C0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.review-box h3 {
+    margin-top: 0;
+    font-size: 1.2em;
+    color: #1a1a1a;
+}
+
+.star-rating {
+    color: #e4c82c; /* Gold color for stars */
+    margin-bottom: 10px;
+}
+
+.review-box p {
+    font-size: 1em;
+    color: #555;
+}
