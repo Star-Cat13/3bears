@@ -41,7 +41,7 @@ class Footer extends HTMLElement {
               <li><a href="https://www.hicountry.com/">Hi-Country Snack Foods</a></li>
           </ul>
       </div>
-<p>© Copyright threebearsmotel.com 2024</p>
+<p style="text-align: center">© Copyright threebearsmotel.com 2024</p>
 
       `;
     }
