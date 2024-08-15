@@ -411,6 +411,13 @@ h3 {
     font-size: 1.3rem;
 }
 
+.icon-tile img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
 .outdoors-tile {
     display: flex;
 }
