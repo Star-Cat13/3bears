@@ -27,8 +27,6 @@ class Footer extends HTMLElement {
       <div class='links'>
           <h2>EXPLORE LINCOLN</h2>
           <div class='flags'>
-          <img src='https://github.com/Star-Cat13/3bears/blob/main/public/LincolnLogo.png?raw=true' class='linc-flag' />
-          <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Flag_of_Montana.svg/1920px-Flag_of_Montana.svg.png' />
           </div>
   
           <ul>
@@ -43,7 +41,7 @@ class Footer extends HTMLElement {
               <li><a href="https://www.hicountry.com/">Hi-Country Snack Foods</a></li>
           </ul>
       </div>
-<p>© Copyright threebearsmotel.com</p>
+<p>© Copyright threebearsmotel.com 2024</p>
 
       `;
     }
