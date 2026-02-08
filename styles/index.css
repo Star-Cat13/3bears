@@ -387,6 +387,127 @@ h3 {
     width: 100%;
 }
 
+.section.newsletter-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #3d5637;
+    color: white;
+    padding: 2rem 1rem;
+    width: 100%;
+}
+
+.section.newsletter-section h2,
+.section.newsletter-section .info-text {
+    color: white;
+}
+
+.section.newsletter-section .sib-form {
+    width: 100%;
+    max-width: 100%;
+    background-color: transparent;
+}
+
+.section.newsletter-section newsletter-component {
+    display: block;
+    width: 100%;
+    max-width: 560px;
+    margin: 1rem auto;
+}
+
+/* Green form styling - input stays light for readability */
+#sib-container.sib-form-green .input {
+    background-color: #fff;
+    color: #1d2528;
+    border-color: rgba(255,255,255,0.5);
+}
+
+#sib-container.sib-form-green .input::placeholder {
+    color: #8390A4;
+}
+
+#sib-container.sib-form-green .sib-form-block__button {
+    background-color: #1d2528;
+}
+
+/* Compact newsletter bar - inline at bottom of welcome section */
+.newsletter-compact-bar {
+    background-color: #3d5637;
+    padding: 0.6rem 1rem;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.newsletter-compact-bar .sib-container-compact {
+    background-color: transparent !important;
+    border: none !important;
+    max-width: 100% !important;
+}
+
+.newsletter-compact-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.newsletter-compact-text {
+    color: white;
+    font-size: 0.95rem;
+    font-weight: 500;
+    white-space: normal;
+    text-align: center;
+}
+
+.newsletter-compact-field {
+    width: min(360px, 100%);
+}
+
+.newsletter-compact-field .input {
+    width: 100%;
+    padding: 0.6rem 0.75rem;
+    font-size: 0.9rem;
+    border-radius: 3px;
+    border: 1px solid rgba(255,255,255,0.5);
+}
+
+.newsletter-compact-captcha {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.newsletter-compact-btn {
+    background-color: #1d2528 !important;
+    color: white !important;
+    padding: 0.6rem 1.25rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.newsletter-compact-btn:hover {
+    opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+    .newsletter-compact-row {
+        flex-direction: column;
+    }
+
+    .newsletter-compact-text {
+        text-align: center;
+    }
+
+    .newsletter-compact-field {
+        width: 100%;
+    }
+}
+
 .icons {
     display: flex;
     justify-content: center;
