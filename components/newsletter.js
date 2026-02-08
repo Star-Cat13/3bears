@@ -1,7 +1,6 @@
 /**
  * Brevo newsletter signup component.
  * Usage: <newsletter-component></newsletter-component>
- * Compact: <newsletter-component compact></newsletter-component>
  * Add to page head: <script src="components/newsletter.js" type="text/javascript" defer></script>
  */
 class Newsletter extends HTMLElement {
@@ -10,58 +9,8 @@ class Newsletter extends HTMLElement {
     }
 
     connectedCallback() {
-        const isCompact = this.hasAttribute('compact');
-        this.innerHTML = isCompact ? this._getCompactTemplate() : this._getFullTemplate();
+        this.innerHTML = this._getFullTemplate();
         this._initBrevo();
-    }
-
-    _getCompactTemplate() {
-        return `
-<style>
-  @font-face { font-display: block; font-family: Roboto; src: url(https://assets.brevo.com/font/Roboto/Latin/normal/normal/7529907e9eaf8ebb5220c5f9850e3811.woff2) format("woff2"), url(https://assets.brevo.com/font/Roboto/Latin/normal/normal/25c678feafdc175a70922a116c9be3e7.woff) format("woff") }
-  #sib-container-compact input::placeholder { text-align: left; font-family: Helvetica, sans-serif; color: #8390A4; }
-</style>
-<link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
-<div class="newsletter-compact-bar">
-  <div class="sib-form" style="text-align: center;">
-    <div id="sib-form-container" class="sib-form-container">
-      <div id="error-message" class="sib-form-message-panel" style="font-size:14px; text-align:left; font-family:Helvetica, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;">
-        <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
-          <span class="sib-form-message-panel__inner-text">Your subscription could not be saved. Please try again.</span>
-        </div>
-      </div>
-      <div></div>
-      <div id="success-message" class="sib-form-message-panel" style="font-size:14px; text-align:left; font-family:Helvetica, sans-serif; color:#085229; background-color:#e7faf0; border-radius:3px; border-color:#13ce66;">
-        <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
-          <span class="sib-form-message-panel__inner-text">Your subscription has been successful.</span>
-        </div>
-      </div>
-      <div></div>
-      <div id="sib-container" class="sib-container-compact sib-form-green">
-        <form id="sib-form" method="POST" action="https://a96b1965.sibforms.com/serve/MUIFAMYFT2BOPoXVcQ7K-I-u1TFSPcoUCWo11txlco8KDPu2zjC34zbr1vEAuGsZQkYh9GGHTm9wZT5euAc3oXNlbeXj9XP_FFsGGzx75x7EIk5FByy5ZbdSK1x6aPXuFjKzyv1t0oW7mWFTLHrPULBrSDTtzGLVvbwcmjwogH72zQEO_iCsSJdHfWHAQI6ZegbHkS0hhZu_U6oa6g==" data-type="subscription">
-        <div class="newsletter-compact-row">
-          <span class="newsletter-compact-text">Subscribe for seasonal specials and local happenings.</span>
-          <div class="newsletter-compact-field sib-input sib-form-block">
-            <div class="form__entry entry_block">
-              <div class="form__label-row">
-                <div class="entry__field">
-                  <input class="input" type="text" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="Enter your email" data-required="true" required />
-                </div>
-              </div>
-              <label class="entry__error entry__error--primary"></label>
-            </div>
-          </div>
-          <div class="g-recaptcha-v3" data-sitekey="6Lcg2mQsAAAAAA0MOr9pkmoFtIvVKtGqy6KO1SsY" style="display: none"></div>
-          <button class="sib-form-block__button newsletter-compact-btn" form="sib-form" type="submit">SUBSCRIBE</button>
-        </div>
-        <input type="text" name="email_address_check" value="" class="input--hidden">
-        <input type="hidden" name="locale" value="en">
-      </form>
-      </div>
-    </div>
-  </div>
-</div>
-        `;
     }
 
     _getFullTemplate() {
@@ -191,19 +140,26 @@ class Newsletter extends HTMLElement {
                 selectedOptions: '{quantity} selected',
             }
         };
-        window.AUTOHIDE = window.AUTOHIDE !== undefined ? window.AUTOHIDE : Boolean(0);
+        window.AUTOHIDE = window.AUTOHIDE !== undefined ? window.AUTOHIDE : Boolean(1);
 
         // Load Brevo scripts if not already loaded
-        this._loadScript('https://sibforms.com/forms/end-form/build/main.js', true);
+        this._loadScript('https://sibforms.com/forms/end-form/build/main.js', true, false, () => {
+            // Brevo's main.js is often initialized on DOMContentLoaded.
+            // Since we load it dynamically, re-dispatch events so it can attach
+            // its submit handler and show the inline success message panel.
+            try { document.dispatchEvent(new Event('DOMContentLoaded')); } catch (e) { }
+            try { window.dispatchEvent(new Event('load')); } catch (e) { }
+        });
         this._loadScript('https://www.google.com/recaptcha/api.js?render=6Lcg2mQsAAAAAA0MOr9pkmoFtIvVKtGqy6KO1SsY&hl=en', true, true);
     }
 
-    _loadScript(src, defer = false, async = false) {
+    _loadScript(src, defer = false, async = false, onload) {
         if (document.querySelector(`script[src="${src}"]`)) return;
         const script = document.createElement('script');
         script.src = src;
         if (defer) script.defer = true;
         if (async) script.async = true;
+        if (typeof onload === 'function') script.onload = onload;
         document.body.appendChild(script);
     }
 }
