@@ -51,14 +51,7 @@ class Newsletter extends HTMLElement {
               <label class="entry__error entry__error--primary"></label>
             </div>
           </div>
-          <div class="newsletter-compact-captcha sib-captcha sib-form-block">
-            <div class="form__entry entry_block">
-              <div class="form__label-row">
-                <div class="g-recaptcha sib-visible-recaptcha" id="sib-captcha" data-sitekey="6Lcg2mQsAAAAAA0MOr9pkmoFtIvVKtGqy6KO1SsY" data-callback="handleCaptchaResponse" style="transform:scale(0.75);transform-origin:0 0;"></div>
-              </div>
-              <label class="entry__error entry__error--primary"></label>
-            </div>
-          </div>
+          <div class="g-recaptcha-v3" data-sitekey="6Lcg2mQsAAAAAA0MOr9pkmoFtIvVKtGqy6KO1SsY" style="display: none"></div>
           <button class="sib-form-block__button newsletter-compact-btn" form="sib-form" type="submit">SUBSCRIBE</button>
         </div>
         <input type="text" name="email_address_check" value="" class="input--hidden">
@@ -162,14 +155,7 @@ class Newsletter extends HTMLElement {
           </div>
         </div>
         <div style="padding: 8px 0;">
-          <div class="sib-captcha sib-form-block">
-            <div class="form__entry entry_block">
-              <div class="form__label-row ">
-                <div class="g-recaptcha sib-visible-recaptcha" id="sib-captcha" data-sitekey="6Lcg2mQsAAAAAA0MOr9pkmoFtIvVKtGqy6KO1SsY" data-callback="handleCaptchaResponse" style="direction:ltr"></div>
-              </div>
-              <label class="entry__error entry__error--primary" style="font-size:16px; text-align:left; font-family:Helvetica, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;"></label>
-            </div>
-          </div>
+          <div class="g-recaptcha-v3" data-sitekey="6Lcg2mQsAAAAAA0MOr9pkmoFtIvVKtGqy6KO1SsY" style="display: none"></div>
         </div>
         <div style="padding: 8px 0;">
           <div class="sib-form-block" style="text-align: left">
@@ -205,22 +191,19 @@ class Newsletter extends HTMLElement {
                 selectedOptions: '{quantity} selected',
             }
         };
-        window.handleCaptchaResponse = window.handleCaptchaResponse || function () {
-            var event = new Event('captchaChange');
-            document.getElementById('sib-captcha').dispatchEvent(event);
-        };
         window.AUTOHIDE = window.AUTOHIDE !== undefined ? window.AUTOHIDE : Boolean(0);
 
         // Load Brevo scripts if not already loaded
         this._loadScript('https://sibforms.com/forms/end-form/build/main.js', true);
-        this._loadScript('https://www.google.com/recaptcha/api.js?hl=en');
+        this._loadScript('https://www.google.com/recaptcha/api.js?render=6Lcg2mQsAAAAAA0MOr9pkmoFtIvVKtGqy6KO1SsY&hl=en', true, true);
     }
 
-    _loadScript(src, defer = false) {
+    _loadScript(src, defer = false, async = false) {
         if (document.querySelector(`script[src="${src}"]`)) return;
         const script = document.createElement('script');
         script.src = src;
         if (defer) script.defer = true;
+        if (async) script.async = true;
         document.body.appendChild(script);
     }
 }
