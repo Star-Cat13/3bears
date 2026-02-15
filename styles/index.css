@@ -370,6 +370,7 @@ h3 {
 .section {
     height: auto;
     width: 100%;
+    box-sizing: border-box;
     padding: 1rem 0;
 }
 
