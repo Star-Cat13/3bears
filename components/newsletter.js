@@ -99,7 +99,7 @@ class Newsletter extends HTMLElement {
                 </div>
               </div>
               <label class="entry__error entry__error--primary" style="font-size:16px; text-align:left; font-family:Helvetica, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;"></label>
-              <label class="entry__specification" style="font-size:12px; text-align:left; font-family:Helvetica, sans-serif; color:rgba(255,255,255,0.9); text-align:left">Provide your email address to subscribe. For e.g abc@xyz.com</label>
+              <label class="entry__specification" style="font-size:12px; text-align:left; font-family:Helvetica, sans-serif; color:rgba(255,255,255,0.9); text-align:left">Provide your email address to subscribe. e.g., abc@xyz.com</label>
             </div>
           </div>
         </div>

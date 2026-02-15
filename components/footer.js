@@ -9,8 +9,8 @@ class Footer extends HTMLElement {
       <div class='footer-top'>
           <div class='hours'>
               <h2>COME ON IN!</h2>
-              <span>Office Hours: 8 AM to 10 PM </span> <br />
-              <span>OPEN YEAR ROUND <br />Excluding the first two weeks of December. </span> <br /> <br .>
+              <span>Office Hours: 8 AM to 10 PM</span> <br />
+              <span>Open year-round, except for the first two weeks of December.</span> <br /> <br />
               ADDRESS <br />MT HWY 200<br />
                   203 Main St.<br />
                   Lincoln, Montana 59639
@@ -43,7 +43,7 @@ class Footer extends HTMLElement {
           </ul>
       </div>
       -->
-<p style="text-align: center">© Copyright threebearsmotel.com 2024</p>
+<p style="text-align: center">© 2024 threebearsmotel.com</p>
 
       `;
     }

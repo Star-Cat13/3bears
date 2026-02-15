@@ -7,18 +7,18 @@ class Tipi extends HTMLElement {
         this.innerHTML = `
         <div class="row room-pics">
             <div class="column">
-                <img src="./public/tipi/2024_bear_tipi.jpg?raw=true" onclick="openModal(); currentSlide(1);" class="hover-shadow" />
+                <img src="https://raw.githubusercontent.com/Star-Cat13/3bears/main/public/tipi/2024_bear_tipi.jpg" onclick="openModal(); currentSlide(1);" class="hover-shadow" />
             </div>
             <div class="column">
-                <img src="./public/tipi/2024_bear_tipi_bed.jpg?raw=true" onclick="openModal(); currentSlide(2);" class="hover-shadow" />
+                <img src="https://raw.githubusercontent.com/Star-Cat13/3bears/main/public/tipi/2024_bear_tipi_bed.jpg" onclick="openModal(); currentSlide(2);" class="hover-shadow" />
             </div>
         </div>
         <div class="row room-pics">
             <div class="column">
-                <img src="./public/tipi/2024_horse_tipi_bed.jpg?raw=true" onclick="openModal(); currentSlide(3);" class="hover-shadow" />
+                <img src="https://raw.githubusercontent.com/Star-Cat13/3bears/main/public/tipi/2024_horse_tipi_bed.jpg" onclick="openModal(); currentSlide(3);" class="hover-shadow" />
             </div>
             <div class="column">
-        <img src="./public/tipi/2024_horse_tipi.jpg?raw=true" onclick="openModal(); currentSlide(4);" class="hover-shadow" />
+        <img src="https://raw.githubusercontent.com/Star-Cat13/3bears/main/public/tipi/2024_horse_tipi.jpg" onclick="openModal(); currentSlide(4);" class="hover-shadow" />
             </div>
         </div>
 
@@ -28,25 +28,25 @@ class Tipi extends HTMLElement {
 
                     <div class="mySlides">
                         <div class="numbertext">1 / 4</div>
-                        <img src="./public/tipi/2024_bear_tipi.jpg?raw=true" style="width: 100%;"  />
+                        <img src="https://raw.githubusercontent.com/Star-Cat13/3bears/main/public/tipi/2024_bear_tipi.jpg" style="width: 100%;"  />
                         
                     </div>
 
                     <div class="mySlides">
                         <div class="numbertext">2 / 4</div>
-                        <img src="./public/tipi/2024_bear_tipi_bed.jpg" style="width: 100%;"  />
+                        <img src="https://raw.githubusercontent.com/Star-Cat13/3bears/main/public/tipi/2024_bear_tipi_bed.jpg" style="width: 100%;"  />
                         
                     </div>
 
                     <div class="mySlides">
                         <div class="numbertext">3 / 4</div>
-                        <img src="./public/tipi/2024_horse_tipi_bed.jpg?raw=true" style="width: 100%;"  />
+                        <img src="https://raw.githubusercontent.com/Star-Cat13/3bears/main/public/tipi/2024_horse_tipi_bed.jpg" style="width: 100%;"  />
                         
                     </div>
 
                     <div class="mySlides">
                         <div class="numbertext">4 / 4</div>
-                        <img src="./public/tipi/2024_horse_tipi.jpg?raw=true" style="width: 100%;"  />
+                        <img src="https://raw.githubusercontent.com/Star-Cat13/3bears/main/public/tipi/2024_horse_tipi.jpg" style="width: 100%;"  />
                         
                     </div>
 
@@ -57,16 +57,16 @@ class Tipi extends HTMLElement {
                    
                     <div class='thumbnails-container'>
             <div class="column">
-                <img class="demo" src="./public/tipi/2024_bear_tipi_400x284.jpg?raw=true" onclick="currentSlide(2);" alt="" />
+                <img class="demo" src="https://raw.githubusercontent.com/Star-Cat13/3bears/main/public/tipi/2024_bear_tipi_400x284.jpg" onclick="currentSlide(2);" alt="" />
             </div>
             <div class="column">
-                <img class="demo" src="./public/tipi/2024_bear_tipi_bed_400x284.jpg?raw=true" onclick="currentSlide(2);" alt="" />
+                <img class="demo" src="https://raw.githubusercontent.com/Star-Cat13/3bears/main/public/tipi/2024_bear_tipi_bed_400x284.jpg" onclick="currentSlide(2);" alt="" />
             </div>
             <div class="column">
-                <img class="demo" src="./public/tipi/2024_horse_tipi_bed_400x284.jpg?raw=true" onclick="currentSlide(3);" alt="" />
+                <img class="demo" src="https://raw.githubusercontent.com/Star-Cat13/3bears/main/public/tipi/2024_horse_tipi_bed_400x284.jpg" onclick="currentSlide(3);" alt="" />
             </div>
             <div class="column">
-                <img class="demo" src="./public/tipi/2024_horse_tipi_400x284.jpg?raw=true" onclick="currentSlide(4);" alt="" />
+                <img class="demo" src="https://raw.githubusercontent.com/Star-Cat13/3bears/main/public/tipi/2024_horse_tipi_400x284.jpg" onclick="currentSlide(4);" alt="" />
             </div>
         </div>
 
