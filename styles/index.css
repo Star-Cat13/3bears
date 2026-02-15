@@ -70,13 +70,15 @@ button:focus-visible {
 .topnav {
     background-color: #1d2528;
     overflow: hidden;
+    display: flex;
+    align-items: center;
     position: sticky;
     top: 0;
     z-index: 100;
 }
 
 .topnav a {
-    float: left;
+    float: none;
     display: flex;
     align-items: center;
     gap: 8px;
@@ -88,28 +90,28 @@ button:focus-visible {
 
 .topnav .nav-logo {
     display: block;
-    width: 32px;
-    height: 32px;
+    width: 48px;
+    height: 48px;
     flex: 0 0 auto;
 }
 
 .topnav a.nav-brand {
-    padding: 10px 12px;
+    padding: 0 12px;
 }
 
 .topnav a.nav-brand .nav-logo {
-    width: 28px;
-    height: 28px;
+    width: 48px;
+    height: 48px;
 }
 
 @media screen and (max-width: 600px) {
     .topnav a.nav-brand {
-        padding: 8px 10px;
+        padding: 0 10px;
     }
 
     .topnav a.nav-brand .nav-logo {
-        width: 24px;
-        height: 24px;
+        width: 48px;
+        height: 48px;
     }
 }
 
@@ -122,6 +124,16 @@ button:focus-visible {
     color: black;
 }
 
+.topnav a.nav-brand:hover {
+    background-color: transparent;
+    color: #f2f2f2;
+}
+
+.topnav a.icon:hover {
+    background-color: transparent;
+    color: #f2f2f2;
+}
+
 .topnav a.active {
     background-color: #3D5637;
     color: white;
@@ -129,6 +141,10 @@ button:focus-visible {
 
 .topnav .icon {
     display: none;
+}
+
+.topnav a.icon {
+    margin-left: auto;
 }
 
 
@@ -145,36 +161,50 @@ button:focus-visible {
 
 @media screen and (max-width: 600px) {
     .topnav.responsive {
-        position: fixed;
+        position: sticky;
         top: 0;
-        left: 0;
-        right: 0;
         z-index: 1000;
         /* Ensure the dropdown is above other content */
         background-color: #1d2528;
-        padding: 10px 0;
+        padding: 0;
         overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
     }
 
     .topnav.responsive a.icon {
-        position: absolute;
-        right: 0;
-        top: 0;
+        order: 1;
     }
 
-    .topnav.responsive a {
+    .topnav.responsive a.nav-link {
         float: none;
-        display: block;
+        display: flex;
         text-align: left;
         padding: 14px 16px;
         text-decoration: none;
         font-size: 17px;
         color: #f2f2f2;
+        order: 2;
+        width: 100%;
     }
 
-    .topnav.responsive a .nav-logo {
-        width: 20px;
-        height: 20px;
+    .topnav.responsive a.nav-brand {
+        padding: 0 10px;
+        order: 0;
+        width: auto;
+    }
+
+    .topnav.responsive a.nav-brand .nav-logo {
+        width: 48px;
+        height: 48px;
+    }
+
+    /* Remove hover effect for dropdown items (keep active highlight) */
+    .topnav.responsive a.nav-link:not(.active):hover {
+        background-color: transparent;
+        color: #f2f2f2;
     }
 }
 
@@ -288,12 +318,6 @@ img {
     margin-bottom: -4px;
 }
 
-.caption-container {
-    text-align: center;
-    background-color: black;
-    padding: 2px 16px;
-    color: white;
-}
 
 .demo {
     opacity: 0.6;
@@ -675,12 +699,6 @@ li {
     top: 0;
 }
 
-.caption-container {
-    text-align: center;
-    background-color: black;
-    padding: 2px 16px;
-    color: white;
-}
 
 img.demo {
     opacity: 0.6;

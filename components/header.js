@@ -14,7 +14,7 @@ class Header extends HTMLElement {
         <a href="./contact.html" class="nav-link">Contact</a>
         <a href="./about.html" class="nav-link">About</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
+            <i class="fas fa-bars"></i>
         </a>
     </div>
 
