@@ -77,12 +77,40 @@ button:focus-visible {
 
 .topnav a {
     float: left;
-    display: block;
+    display: flex;
+    align-items: center;
+    gap: 8px;
     color: #f2f2f2;
-    text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+}
+
+.topnav .nav-logo {
+    display: block;
+    width: 32px;
+    height: 32px;
+    flex: 0 0 auto;
+}
+
+.topnav a.nav-brand {
+    padding: 10px 12px;
+}
+
+.topnav a.nav-brand .nav-logo {
+    width: 28px;
+    height: 28px;
+}
+
+@media screen and (max-width: 600px) {
+    .topnav a.nav-brand {
+        padding: 8px 10px;
+    }
+
+    .topnav a.nav-brand .nav-logo {
+        width: 24px;
+        height: 24px;
+    }
 }
 
 #myTopnav {
@@ -142,6 +170,11 @@ button:focus-visible {
         text-decoration: none;
         font-size: 17px;
         color: #f2f2f2;
+    }
+
+    .topnav.responsive a .nav-logo {
+        width: 20px;
+        height: 20px;
     }
 }
 
