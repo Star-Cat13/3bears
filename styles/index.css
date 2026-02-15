@@ -366,6 +366,11 @@ h3 {
     padding: 0 2rem;
 }
 
+.address a {
+    color: inherit;
+    text-decoration: underline;
+}
+
 .info-address {
     text-align: justify;
     text-indent: 20px;
@@ -557,6 +562,30 @@ h3 {
 .phoneNumber a {
     color: black;
     text-decoration: underline;
+}
+
+.book-now-cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    padding: 10px 16px;
+    border-radius: 999px;
+    background-color: #3D5637;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    text-decoration: none;
+}
+
+.book-now-cta:hover {
+    background-color: #2f442a;
+    color: #fff;
+}
+
+.book-now-cta:focus-visible {
+    outline: 3px solid #3D5637;
+    outline-offset: 3px;
 }
 
 .fullpg {
@@ -791,6 +820,22 @@ footer {
     justify-content: space-between;
     gap: 20px;
     margin: 20px 10px;
+}
+
+.reviews {
+    text-align: center;
+}
+
+.reviews > p {
+    margin: 0;
+    padding: 0 2rem;
+}
+
+.reviews > a {
+    display: inline-block;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    text-decoration: underline;
 }
 
 .review-box {

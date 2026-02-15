@@ -18,6 +18,20 @@ class Header extends HTMLElement {
         </a>
     </div>
 
+    <div class="title">
+        <h1>Three Bears Motel Lincoln, MT</h1>
+        <p class="address">
+            <a href="https://maps.app.goo.gl/Pc46ezY46T4S3izV8" target="_blank" rel="noopener noreferrer"
+                aria-label="Open Three Bears Motel in Google Maps">
+                MT HWY 200<br> 203 Main St. Lincoln, Montana 59639
+            </a>
+        </p>
+        
+        <a class="book-now-cta" href="tel:+4063624355" aria-label="Call to book now">
+            Call to Book Now
+        </a>
+        <p class="phoneNumber"><a href="tel:+4063624355">(406) 362-4355</a></p>
+    </div>
     
       `;
 

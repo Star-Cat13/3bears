@@ -14,6 +14,7 @@
     <script src="scripts/gallery.js" type="text/javascript" defer></script>
     <script src="scripts/nav.js" type="text/javascript" defer></script>
     <script src="components/newsletter.js" type="text/javascript" defer></script>
+    <script src="components/reviews.js" type="text/javascript" defer></script>
 
 </head>
 
@@ -22,11 +23,6 @@
 
 
     <div class="">
-        <div class='title'>
-            <h1>Three Bears Motel Lincoln, MT</h1>
-            <p class='address'>MT HWY 200<br> 203 Main St. Lincoln, Montana 59639</p>
-            <p class='phoneNumber'><a href="tel:+4063624355">(406) 362-4355</a></p>
-        </div>
         <img class="img-front" src="https://raw.githubusercontent.com/Star-Cat13/3bears/main/public/2022-motel.jpg"
             alt="Front of Three Bears Motel" loading="eager" fetchpriority="high" decoding="async">
             <div class="section newsletter-section" style="padding-top: 0px; padding-bottom: 0px;">
@@ -37,12 +33,8 @@
     <div class='section welcome'>
         <div class="content">
             <div class="text">
-                <h2>Welcome to Three Bears Motel. Your Cozy Retreat in Lincoln, Montana!</h2>
-                <p class="info-text">Escape to the tranquility and charm of Three Bears Motel, a hidden gem nestled
-                    in the heart of Lincoln, Montana. Immerse
-                    yourself in the genuine warmth and hospitality that sets us apart from the rest. Our family-run
-                    motel offers a
-                    welcoming haven for relaxation, adventure, and unforgettable experiences.
+                <h2>Welcome to Three Bears Motel – Cozy Lodging in Lincoln, Montana</h2>
+                <p class="info-text">Escape to the tranquility and charm of Three Bears Motel, a family-run motel in Lincoln, Montana, conveniently located on Highway 200. Our comfortable, pet-friendly lodging is perfect for travelers visiting the Blackfoot River, the Bob Marshall Wilderness, and the surrounding outdoor recreation areas.
                 </p>
             </div>
             <div class='icons'>
@@ -80,9 +72,7 @@
             <p class='info-text'>Step into our well-appointed rooms, designed with your comfort in mind. Sink into plush
                 bedding and feel the stress melt away as you unwind in our cozy atmosphere. Stay connected with complimentary Wi-Fi, watch your favorite shows with DISH TV, and enjoy the convenience of
                 in-room
-                amenities such as a refrigerator, microwave, and single-serve coffee maker. We go above and beyond to ensure
-                your
-                stay feels like a home away from home.<br /><br /><span>Check-In starts at 3:00 pm</span><br />
+                amenities such as a refrigerator, microwave, and single-serve coffee maker. Whether you’re passing through or planning an outdoor adventure, our Lincoln, MT lodging provides comfort, convenience, and genuine Montana hospitality.<br /><br /><span>Check-In starts at 3:00 pm</span><br />
                 <span>Check-Out is by 11:00 am</span> <br /> <br /> If you are unable to keep your reservation, please
                 see our <a href="./about.html#cancellation">cancellation policy.</a>
             </p>
@@ -90,45 +80,13 @@
         <img src="https://raw.githubusercontent.com/Star-Cat13/3bears/main/public/room-9-bed-crop.png" alt="Motel room bed" loading="lazy" decoding="async" />
     </div>
 
-    <!-- <div class="section">
+    <section class="section reviews" id="reviews">
         <h2>Guest Reviews</h2>
-        <div class="reviews-container">
-            <div class="review-box">
-                <h3>Pearl <br>October 2021  <div class="star-rating">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div></h3>
-              
-                <p>"Great customer service. Clean and super cute rooms. My fiancé and I went for our birthdays for a weekend get away, and they were very accommodating to our late arrival. I also appreciated then being pet friendly. Definitely will be planning a trip back soon.
-                    Quiet rooms
-                    Good room service . Thoughtful amenities"</p>
-            </div>
-            <div class="review-box">
-                <h3>Melissa<br>July 2024<div class="star-rating">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div></h3>
-                <p>"We stay here for a week every year.  We love the little town.  The rooms are clean, service is awesome.  We love this town."</p>
-            </div>
-            <div class="review-box">
-                <h3>Robert<br>November 2023<div class="star-rating">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div></h3>
-                <p>"The Motel is in a beautiful place, Lincoln. I was together with a friend I had not seen in 31 years, so to be in a motel that was spotless, beautifully decorated.  The toilet was the best I have ever had in a motel room, or hotel room for that matter, and excellent shower, hopefully I can stay there again someday.  The owners are wonderful people."</p>
-            </div>
-        </div>
-    </div>
-     -->
+        <p>⭐ 4.8 out of 5 on <a href="https://www.google.com/travel/hotels/entity/CgsItJ-yqqLNjbnbARAB/reviews?q=three%20bears%20motel&g2lb=4965990%2C72471280%2C72560029%2C72573224%2C72601601%2C72647020%2C72686036%2C72803964%2C72882230%2C72958624%2C73059275%2C73064764%2C73249147%2C121522131&hl=en-US&gl=us&cs=1&ssta=1&ts=CAEaSQorEicyJTB4NGNiNDgxOTcyOWIzNTI5NToweGRiNzIzNjZhMjU0YzhmYjQaABIaEhQKBwjqDxACGBMSBwjqDxACGBQYATICEAAqBAoAGgA&qs=CAE4AkIJCbSPTCVqNnLb&ictx=111&utm_campaign=sharing&utm_medium=link&utm_source=htls" target="_blank" rel="noopener noreferrer">Google Reviews</a></p>
+        <reviews-component data-src="./data/google-reviews.json" max="3"></reviews-component>
+        <p>Enjoyed your stay? We'd love your feedback!
+            Leave us a review on Google.</p>
+    </section>
 
     <div class='section'>
         <h2>Gateway to Nature's Splendor</h2>
@@ -149,8 +107,7 @@
         <p class='info-text'>Prepare to be captivated by the natural beauty that surrounds us. Lincoln, Montana, is a
             gateway to an outdoor paradise. Explore miles of hiking trails that wind through lush forests and reveal
             breathtaking vistas. Cast your line into the crystal-clear waters of the Blackfoot River, known for its
-            world-class fishing. Set up camp at nearby tranquil campsites and fall asleep under a blanket of stars. Let
-            nature's splendor rejuvenate your spirit and create memories to last a lifetime.</p>
+            world-class fishing. Three Bears Motel is an ideal base for exploring the Bob Marshall Wilderness, the Blackfoot River, and the surrounding Lincoln area.</p>
         <div class='outdoors-tile'>
             <img class='outdoors-img' src="https://raw.githubusercontent.com/Star-Cat13/3bears/main/public/paddle-board.jpg"
                 alt="Paddle boarding near Lincoln, Montana" loading="lazy" decoding="async" />
@@ -163,7 +120,7 @@
 
     <div class='section'>
         <h2>Embrace Local History and Culture</h2>
-        <img src="https://raw.githubusercontent.com/Star-Cat13/3bears/main/public/lincoln-mt.png"
+        <img src="https://raw.githubusercontent.com/Star-Cat13/3bears/main/public/lincoln-mt-crop.png"
             alt="Welcome to Lincoln sign" loading="lazy" decoding="async" />
         <p class='info-text'>The town of Lincoln was established in the late 1800s as a supply hub for miners and prospectors. Its history is deeply intertwined with the stories of pioneers,
             adventurers, and the challenges they faced in the pursuit of wealth and opportunity. Over the years, Lincoln
@@ -171,11 +128,11 @@
             destination for outdoor enthusiasts. </p>
     </div>
 
-    <div class='section'>
+    <!-- <div class='section'>
         <h2>Events</h2>
         <p class='info-text'>To find events during your stay, visit the Lincoln Valley Chamber of Commerce <a
                 href='https://www.lincolnmontana.com/google-calendar'>calendar</a>.</p>
-    </div>
+    </div> -->
 
 
     <div class='section'>
@@ -195,12 +152,12 @@
         </div>
     </div>
 
-    <div class='section'>
+    <!-- <div class='section'>
         <h2>Local Flavors and Dining Delights</h2>
         <p class='info-text'>Savor the flavors of Lincoln at Burger Paradise and other local favorites.
             Our taverns and restaurants have something for everyone year-round. After your meal, try your luck in one of
             the gaming machines!</p>
-    </div>
+    </div> -->
 
     <div class='section'>
         <h2>Lincoln, Montana's Enchanting Nature and Wildlife</h2>

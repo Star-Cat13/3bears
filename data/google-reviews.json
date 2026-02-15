@@ -1,0 +1,26 @@
+{
+  "source": "seed",
+  "placeName": "Three Bears Motel",
+  "placeId": null,
+  "placeUrl": null,
+  "rating": null,
+  "userRatingsTotal": null,
+  "reviews": [
+    {
+      "rating": 5,
+      "text": "LOVED this motel! Great rates, rooms spotless, definitely a homey western vibe. Beds were very comfy. Quiet area. Bathroom small but squeaky clean. Will absolutely stay there again.",
+      "url": null
+    },
+    {
+      "rating": 5,
+      "text": "Stayed here during Montana's Race to the Sky Dogsled Race. Customer service was incredible, they were so accommodating with parking for our dog trucks and to our retired sled dog that stayed in the room with us. Beds were clean, quiet, and very comfortable. Excellent water pressure too. We will definitely stay here again!",
+      "url": null
+    },
+    {
+      "rating": 5,
+      "text": "It is a sweet motel that is very clean and very reasonably priced. The owners are very nice as well.its a small town so things are very close. I had a hardy dinner at the tavern next store and across the street there is a man who makes bear carvings. They are terrific.",
+      "url": null
+    }
+  ]
+}
+
