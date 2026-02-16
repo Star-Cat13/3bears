@@ -25,7 +25,7 @@ class Header extends HTMLElement {
     </div>
 
     <div class="title">
-        <h1>Three Bears Motel Lincoln, MT</h1>
+        <h1>Three Bears Motel <br> Lincoln, MT</h1>
         <p class="address">
             <a href="https://maps.app.goo.gl/Pc46ezY46T4S3izV8" target="_blank" rel="noopener noreferrer"
                 aria-label="Open Three Bears Motel in Google Maps">
