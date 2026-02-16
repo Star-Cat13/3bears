@@ -17,7 +17,7 @@ class Footer extends HTMLElement {
           </div>
           <div class='contact'>
               <h2>CONTACT</h2>
-              PHONE <br /><a href="tel:+4063624355">(406) 362-4355</a><br />
+              PHONE <br /><a href="tel:+14063624355">(406) 362-4355</a><br />
               EMAIL <br /><a href="mailto:threebearsmotel@gmail.com">threebearsmotel@gmail.com</a><br />
               MAILING ADDRESS <br />
               PO Box 995<br />

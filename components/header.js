@@ -27,10 +27,12 @@ class Header extends HTMLElement {
             </a>
         </p>
         
-        <a class="book-now-cta" href="tel:4063624355" aria-label="Call to book now">
+        <a class="book-now-cta" href="tel:+14063624355" aria-label="Call to book now">
             Call to Book Now
         </a>
-        <p class="phoneNumber"><a href="tel:4063624355">(406) 362-4355</a></p>
+        <p class="phoneNumber">
+            <a href="tel:+14063624355">(406) 362-4355</a>
+        </p>
     </div>
     
       `;
