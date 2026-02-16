@@ -45,7 +45,7 @@ class Footer extends HTMLElement {
       </div>
       -->
 <p style="text-align: center">© 2024 threebearsmotel.com</p>
-
+      </footer>
       `;
     }
 }
