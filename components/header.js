@@ -10,15 +10,15 @@ class Header extends HTMLElement {
             <a href="./index.html" class="nav-brand" aria-label="Home">
                 <img class="nav-logo" src="./public/icon.svg" alt="Three Bears Motel" />
             </a>
-            <a class="nav-phone" href="tel:+14063624355" aria-label="Call (406) 362-4355">
-                <i class="fas fa-phone" aria-hidden="true"></i>
-                <span class="nav-phone-text">(406) 362-4355</span>
-            </a>
         </div>
         <a href="./index.html" class="nav-link">Home</a>
 
         <a href="./contact.html" class="nav-link">Contact</a>
         <a href="./about.html" class="nav-link">About</a>
+        <a class="nav-phone" href="tel:+14063624355" aria-label="Call (406) 362-4355">
+            <i class="fas fa-phone" aria-hidden="true"></i>
+            <span class="nav-phone-text">(406) 362-4355</span>
+        </a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fas fa-bars"></i>
         </a>

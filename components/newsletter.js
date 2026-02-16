@@ -115,7 +115,8 @@ class Newsletter extends HTMLElement {
             </button>
           </div>
         </div>
-        <input type="text" name="email_address_check" value="" class="input--hidden">
+        <label for="EMAIL_ADDRESS_CHECK" style="position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden;">Leave this field empty</label>
+        <input type="text" id="EMAIL_ADDRESS_CHECK" name="email_address_check" value="" class="input--hidden" tabindex="-1" autocomplete="off" aria-hidden="true">
         <input type="hidden" name="locale" value="en">
       </form>
     </div>

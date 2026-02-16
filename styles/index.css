@@ -95,8 +95,9 @@ button:focus-visible {
 }
 
 .topnav a.nav-phone {
-    display: none; /* shown on mobile */
-    padding: 0 10px 0 0;
+    display: flex; /* show on desktop + mobile */
+    margin-left: auto; /* push to top-right */
+    padding: 14px 16px; /* align to navbar edge like other links */
     font-size: 15px;
 }
 
@@ -169,12 +170,12 @@ button:focus-visible {
 }
 
 .topnav a.icon {
-    margin-left: auto;
+    margin-left: 0;
 }
 
 
 @media screen and (max-width: 600px) {
-    .topnav > a:not(:first-child) {
+    .topnav > a.nav-link {
         display: none;
     }
 
