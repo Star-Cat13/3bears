@@ -44,7 +44,7 @@ class Footer extends HTMLElement {
           </ul>
       </div>
       -->
-<p style="text-align: center">© 2026 threebearsmotel.com </p>
+<p style="text-align: center">© 2026 threebearsmotel.com</p>
       </footer>
       `;
     }
