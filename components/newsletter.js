@@ -82,18 +82,12 @@ class Newsletter extends HTMLElement {
             <p>Keep in touch!</p>
           </div>
         </div>
-        <div style="padding: 8px 0;">
-          <div class="sib-form-block" style="font-size:16px; text-align:left; font-family:Helvetica, sans-serif; color:#ffffff; background-color:transparent; text-align:left">
-            <div class="sib-text-form-block">
-              <p>Subscribe for seasonal specials and local happenings.</p>
-            </div>
-          </div>
-        </div>
+        
         <div style="padding: 8px 0;">
           <div class="sib-input sib-form-block">
             <div class="form__entry entry_block">
               <div class="form__label-row ">
-                <label class="entry__label" style="font-weight: 700; text-align:left; font-size:16px; text-align:left; font-weight:700; font-family:Helvetica, sans-serif; color:#ffffff;" for="EMAIL" data-required="*">Enter your email address for updates</label>
+                <label class="entry__label" style="font-weight: 700; text-align:left; font-size:16px; text-align:left; font-weight:700; font-family:Helvetica, sans-serif; color:#ffffff;" for="EMAIL" data-required="*">Subscribe for seasonal specials and local happenings.</label>
                 <div class="entry__field">
                   <input class="input " type="text" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="EMAIL" data-required="true" required />
                 </div>

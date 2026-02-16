@@ -22,6 +22,7 @@ class Footer extends HTMLElement {
               MAILING ADDRESS <br />
               PO Box 995<br />
                   Lincoln, Montana 59639
+              <br /><a href="https://www.facebook.com/3bearsmotel/"><i class="fab fa-2x fa-facebook"></i></a><br />
           </div>
       </div>
       <!--

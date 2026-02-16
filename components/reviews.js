@@ -40,7 +40,7 @@ class Reviews extends HTMLElement {
         {
           rating: 5,
           text:
-            'It is a sweet motel that is very clean and very reasonably priced. The owners are very nice as well.its a small town so things are very close. I had a hardy dinner at the tavern next store and across the street there is a man who makes bear carvings. They are terrific.',
+            "It is a sweet motel that is very clean and very reasonably priced. The owners are very nice as well. It's a small town, so things are close by. I had a hearty dinner at the tavern next door, and across the street there's a man who makes bear carvings. They are terrific.",
           url: null
         }
       ]

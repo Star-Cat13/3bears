@@ -410,6 +410,10 @@ h3 {
     max-width: 50%;
 }
 
+#about-three-bears-motel .info-block img {
+    max-width: 25%;
+}
+
 @media (max-width: 768px) {
     .info-block {
         flex-direction: column;
@@ -422,6 +426,10 @@ h3 {
 
     .info-block img {
         max-width: 100%;
+    }
+
+    #about-three-bears-motel .info-block img {
+        max-width: 50%;
     }
 }
 
@@ -494,22 +502,25 @@ h3 {
 }
 
 .icons {
-    display: flex;
-    justify-content: center;
-    color: black;
-    background-color: rgba(225, 225, 225, 0.75);
-    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+    align-items: stretch;
     margin: 2rem;
-    padding: 1rem;
+    padding: 0;
 }
-
 
 .icon-tile {
     display: flex;
     flex-direction: column;
-    max-width: 75%;
-    justify-content: space-between;
+    justify-content: flex-start;
     text-align: center;
+    color: #1d2528;
+    border: 1px solid rgba(204, 204, 204, 0.85);
+    background-color: rgba(225, 225, 225, 0.82);
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 16px;
 }
 
 .icon-tile h3 {
@@ -522,6 +533,10 @@ h3 {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+}
+
+.icon-tile p {
+    margin-top: 10px;
 }
 
 .outdoors-tile {
@@ -596,6 +611,17 @@ li {
     list-style-type: none;
 }
 
+.bullet-list {
+    list-style: disc;
+    padding-left: 3.2rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.bullet-list li {
+    list-style: disc;
+}
+
 @keyframes logo-spin {
     from {
         transform: rotate(0deg);
@@ -617,8 +643,8 @@ li {
     }
 
     .icons {
-        flex-direction: column;
-        align-items: center;
+        grid-template-columns: 1fr;
+        margin: 1.25rem;
     }
 
 
@@ -822,6 +848,12 @@ footer {
     margin: 20px 10px;
 }
 
+@media screen and (max-width: 600px) {
+    .reviews-container {
+        flex-direction: column;
+    }
+}
+
 .reviews {
     text-align: center;
 }
@@ -840,10 +872,11 @@ footer {
 
 .review-box {
     flex: 1;
-    border: 1px solid #ccc;
+    border: 1px solid rgba(204, 204, 204, 0.85);
     padding: 20px;
     border-radius: 5px;
-    background-color: #E2D4C0;
+    /* Semi-transparent card without fading text */
+    background-color: rgba(226, 212, 192, 0.82);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -861,4 +894,5 @@ footer {
 .review-box p {
     font-size: 1em;
     color: #555;
+    font-weight: 700;
 }
