@@ -4,6 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="canonical" href="https://www.threebearsmotel.com/">
+    <meta name="robots" content="index, follow">
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml">
+    <script>
+        (function () {
+            const { pathname, search, hash, origin } = window.location;
+            const isHome = pathname === "/" || pathname === "/index.html";
+
+            if (
+                pathname === "/index.html" ||
+                (isHome && (search.length > 0 || hash === "#!")) ||
+                search.includes("et_core")
+            ) {
+                window.location.replace(origin + "/");
+            }
+        })();
+    </script>
     <title>Three Bears Motel</title>
     <link rel="icon" type="image/x-icon" href="./favicon.ico" sizes="any">
     <link rel="icon" type="image/svg+xml" href="./public/icon.svg">

@@ -7,11 +7,11 @@ class Header extends HTMLElement {
         this.innerHTML = `
         <div class="topnav" id="myTopnav">
         <div class="nav-left">
-            <a href="./index.html" class="nav-brand" aria-label="Home">
+            <a href="/" class="nav-brand" aria-label="Home">
                 <img class="nav-logo" src="./public/icon.svg" alt="Three Bears Motel" />
             </a>
         </div>
-        <a href="./index.html" class="nav-link">Home</a>
+        <a href="/" class="nav-link">Home</a>
 
         <a href="./contact.html" class="nav-link">Contact</a>
         <a href="./about.html" class="nav-link">About</a>
