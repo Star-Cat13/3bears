@@ -13,8 +13,8 @@ class Header extends HTMLElement {
         </div>
         <a href="/" class="nav-link">Home</a>
 
-        <a href="./contact.html" class="nav-link">Contact</a>
-        <a href="./about.html" class="nav-link">About</a>
+        <a href="/contact.html" class="nav-link">Contact</a>
+        <a href="/about.html" class="nav-link">About</a>
         <a class="nav-phone" href="tel:+14063624355" aria-label="Call (406) 362-4355">
             <i class="fas fa-phone" aria-hidden="true"></i>
             <span class="nav-phone-text">(406) 362-4355</span>
@@ -43,18 +43,21 @@ class Header extends HTMLElement {
     
       `;
 
-        const getBasename = (pathname) => {
-            const parts = String(pathname).split('/').filter(Boolean);
-            return parts[parts.length - 1] || 'index.html';
-        };
-
-        const current = getBasename(window.location.pathname);
-        const links = this.querySelectorAll('.topnav a.nav-link');
-        links.forEach((a) => {
-            const href = a.getAttribute('href') || '';
-            const target = getBasename(new URL(href, window.location.href).pathname);
-            a.classList.toggle('active', target === current);
-        });
+      const normalize = (path) => {
+        return path
+            .replace(/index\.html$/, '')
+            .replace(/\/$/, '');
+    };
+    
+    const currentPath = normalize(window.location.pathname);
+    
+    const links = this.querySelectorAll('.topnav a.nav-link');
+    
+    links.forEach((a) => {
+        const href = a.getAttribute('href') || '';
+        const linkPath = normalize(new URL(href, window.location.origin).pathname);
+        a.classList.toggle('active', linkPath === currentPath);
+    });
     }
 }
 
