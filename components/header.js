@@ -8,7 +8,7 @@ class Header extends HTMLElement {
         <div class="topnav" id="myTopnav">
         <div class="nav-left">
             <a href="/" class="nav-brand" aria-label="Home">
-                <img class="nav-logo" src="./public/icon.svg" alt="Three Bears Motel" />
+                <img class="nav-logo" src="/public/icon.svg" alt="Three Bears Motel" />
             </a>
         </div>
         <a href="/" class="nav-link">Home</a>

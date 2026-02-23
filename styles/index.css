@@ -540,8 +540,17 @@ h3 {
     color: #1d2528;
 }
 
+.section.section-light {
+    background-color: #E2D4C0;
+    color: #1d2528;
+}
+
 .section img {
     width: 100%;
+}
+
+.packages-section .info-block img {
+    max-width: 35%;
 }
 
 .section.newsletter-section {
