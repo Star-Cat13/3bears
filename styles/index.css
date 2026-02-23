@@ -165,6 +165,37 @@ button:focus-visible {
     color: white;
 }
 
+.topnav .nav-dropdown {
+    position: relative;
+    display: flex;
+    align-items: stretch;
+}
+
+.topnav .nav-dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #1d2528;
+    min-width: 180px;
+    z-index: 1001;
+    flex-direction: column;
+}
+
+.topnav .nav-dropdown-content a {
+    width: 100%;
+    justify-content: flex-start;
+}
+
+.topnav .nav-dropdown:hover .nav-dropdown-content {
+    display: flex;
+}
+
+.topnav .nav-dropdown-toggle .nav-caret {
+    font-size: 12px;
+    margin-left: 6px;
+}
+
 .topnav .icon {
     display: none;
 }
@@ -176,6 +207,10 @@ button:focus-visible {
 
 @media screen and (max-width: 600px) {
     .topnav > a.nav-link {
+        display: none;
+    }
+
+    .topnav .nav-dropdown {
         display: none;
     }
 
@@ -219,6 +254,24 @@ button:focus-visible {
         color: #f2f2f2;
         order: 2;
         width: 100%;
+    }
+
+    .topnav.responsive .nav-dropdown {
+        display: flex;
+        order: 2;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .topnav.responsive .nav-dropdown-content {
+        display: flex;
+        position: static;
+        min-width: 0;
+        background-color: transparent;
+    }
+
+    .topnav.responsive a.nav-sublink {
+        padding-left: 32px;
     }
 
     .topnav.responsive a.nav-brand {
